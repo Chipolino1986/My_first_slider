@@ -10,8 +10,6 @@ function slider () {
     images[corrent].classList.remove('opacity_0');
 }
 
-// мой
-
 document.querySelector('.button_slider_box_right button').onclick = function() {
     if (corrent +1 == images.length) {
         corrent = 0;
@@ -21,19 +19,6 @@ document.querySelector('.button_slider_box_right button').onclick = function() {
     slider();
 };
 
-// чужой
-
-// document.querySelector('.button_slider_box_right button').onclick = function() {
-//     if (corrent +1 == images.length) {
-//         corrent = 0;
-//     } else {
-//         corrent ++;
-//     }
-//     slider();
-// };
-
-// мой
-
 document.querySelector('.button_slider_box_left button').onclick = function() {
     if (corrent -1 == -1) {
         corrent = images.length -1;
@@ -42,14 +27,3 @@ document.querySelector('.button_slider_box_left button').onclick = function() {
     }
     slider();
 };
-
-// чужой
-
-// document.querySelector('.button_slider_box_left button').onclick = function() {
-//     if (corrent -1 == -1) {
-//         corrent = images.length -1;
-//     } else {
-//         corrent --;
-//     }
-//     slider();
-// };
